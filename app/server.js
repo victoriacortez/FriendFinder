@@ -13,5 +13,15 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "/api/friends.js"));
+  res.sendFile(path.join(__dirname, "public/home.html"));
 });
+
+app.get("/survey", function(req, res) {
+  res.sendFile(path.join(__dirname, "public/survey.html"));
+});
+
+app.listen(PORT, function(){
+  console.log("App listening on PORT" + 3000)
+})
+
+
