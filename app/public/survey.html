@@ -70,5 +70,22 @@
             <option value="4">Ursula</option>
             <option value="5">Maleficent</option>
         </select>
+<p><a class="btn btn-primary btn-lg" href="http://localhost:3000/survey" id="Submit">Submit</a></p>
+
+<script src="https://code.jquery.com/jquery-3.1.1.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function(){
+
+      $("#Submit").click(function(){
+
+        var a1 = $("#q1").val()
+
+        $.get('http://localhost:3000?a1=' + a1)
+
+      });
+
+});
+</script>
 </body>
 </html>
