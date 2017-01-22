@@ -77,16 +77,6 @@ app.get("/survey", function(req, res) {
 app.listen(PORT, function(){
   console.log("App listening on PORT" + 3000)
 })
-//2 properties first is route - /
-//second is res.send goes to route which is the homepage
-
-//res.json - content type when we send json, we need it to know its json and add content type header. adds header sends json to the browser
 
 
-// "/:characters", funtion(req,res){
-//  var chosen = req.params.characters;
-
-//  console.log(chosen);
-//   res.end();
-}
 
